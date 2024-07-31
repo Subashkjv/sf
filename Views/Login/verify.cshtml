@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Failed</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #17a2b8;
+            height: 100vh;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-danger" id="alerts">
+            Login failed. Please check your username and password and try again.
+        </div>
+        <div class="text-center mt-3">
+            <a href="@Url.Action("Login", "Login")" class="btn btn-info btn-md">Back to Login</a>
+        </div>
+        <div class="text-center mt-3">
+            <p>Don't have an account? <a href="@Url.Action("Registers", "Login")">Register here</a></p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Show the alert message when the page is loaded
+            $('#alert').show();
+        });
+    </script>
+</body>
+</html>

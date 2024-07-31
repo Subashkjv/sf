@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+@if (ViewBag.message == "False")
+{
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Registration Success</title>
+        <style>
+
+            #body {
+                margin: 0;
+                padding: 0;
+                background-color: #17a2b8;
+                height: 100vh;
+            }
+
+            #aa {
+                Border-radius: 1Px;
+                padding: 50px 125px;
+                width: 250px;
+                height: 100px;
+                color: forestgreen;
+                text-align: center;
+                font-size: 25px;
+                margin-left: 30%;
+            }
+
+            #bitton {
+                Border-radius: 1Px;
+                padding: 50px 125px;
+                width: 250px;
+                height: 100px;
+                color: deepskyblue;
+                text-align: center;
+                font-size: 25px;
+                margin-left: 30%;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div id="aa">Registration Failed. The User Name is already exist. Kindly try the different name.</div>
+        <a href="@Url.Action("Login", "Login")" class="btn btn-info btn-md" id="bitton">Back to the Login Page</a>
+    </body>
+    </html>
+
+}
+else{
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Registration Success</title>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #17a2b8;
+                height: 100vh;
+            }
+
+            .container {
+                margin-top: 50px;
+                background-color: white;
+            
+                border-radius: 10px;
+            }
+            #aa {
+                color: forestgreen;
+                text-align: center;
+                font-size: 30px;
+
+            }
+
+            #bitton{
+                Border-radius: 1Px;
+                padding: 50px 125px;
+                width: 250px;
+                height: 100px;
+                color: deepskyblue;
+                text-align: center;
+                font-size: 25px;
+                margin-left: 30%;
+            
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <h2 style="text-align:center" id="aa"> Registration Success</h2>
+            <div  class="alert-success">
+                <a style="text-align:center"  href="@Url.Action("Login", "Login")" class="btn btn-info btn-md" id="bitton">Back to the Login Page</a>
+            </div>
+            <div >
+            
+            </div>
+        </div>
+        
+    </body>
+    </html>
+
+}
+
+
+

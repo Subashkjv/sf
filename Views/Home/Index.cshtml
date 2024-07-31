@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Nights Biryani</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #007BFF;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: #007BFF; /* Green color */
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+            .header-container h1 {
+                margin: 0;
+            }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        /* Hero Section Styling */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+            .hero-content h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007BFF; /* Blue color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #0056b3; /* Darker blue */
+            }
+
+        /* About Section Styling */
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+            .about img {
+                max-width: 100%;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
+
+        /* Menu Section Styling */
+        .menu {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+            .menu h2 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+        .menu-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+            .menu-item img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+
+            .menu-item h3 {
+                margin-top: 10px;
+                font-size: 1.5rem;
+            }
+
+            .menu-item p {
+                font-size: 1rem;
+                margin-top: 10px;
+            }
+
+        /* Contact Section Styling */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+            .contact a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+
+        /* Footer Styling */
+        footer {
+            background: RED; /* Green color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Shadow Nights Biryani</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Experience the Best Biryani in Town!</h2>
+            <p>Delicious, authentic biryani made with the freshest ingredients.</p>
+            <a href="#menu" class="button">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to Shadow Nights Biryani, where we offer a rich and flavorful biryani experience. Our recipes are inspired by traditional methods and made with the finest ingredients.</p>
+        <img src="about-us.jpg" alt="About Us">
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="D:\Subash\Images\download (1).jfif" alt="Biryani Dish 1">
+            <h3>Special Biryani 1</h3>
+            <p>A mouth-watering biryani with a blend of spices and tender meat.</p>
+        </div>
+        <div class="menu-item">
+            <img src="D:\Subash\Images\download (2).jfif" alt="Biryani Dish 2">
+            <h3>Special Biryani 2</h3>
+            <p>A unique biryani with exotic spices and vegetables.</p>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to place an order? Reach out to us!</p>
+        <p>Email: <a href="mailto:support@shadownights.com">support@shadownights.com</a></p>
+        <p>Phone: +123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shadow Nights Biryani. All rights reserved.</p>
+    </footer>
+</body>
+</html>
